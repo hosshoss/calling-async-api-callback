@@ -56,6 +56,10 @@
           "link": "https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-resource.html#connect-wait-token"
         },
         {
+          "text": "Invoking asynchronous external APIs with AWS Step Functions",
+          "link": "https://aws.amazon.com/blogs/architecture/invoking-asynchronous-external-apis-with-aws-step-functions/"
+        },
+        {
           "text": "The AWS Step Functions Workshop",
           "link": "https://catalog.workshops.aws/stepfunctions/en-US"
         }
