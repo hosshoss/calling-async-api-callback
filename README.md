@@ -46,7 +46,7 @@ Workflow Diagram
 1. When the state machine get executed, it will send the API payload to Amazon SQS to be consumed by AWS Lambda function which will call the Async API.
 2. The SQS send message step is configured to wait for callback in order to resume the state machine execution. This is configured by using the [waitForTaskToken](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-resource.html#connect-wait-token) functionality. 
     
-    If you are building the state machine using  [**Amazon States Language** (**ASL**)](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-amazon-states-language.html) then you can use the following resource `arn:aws:states:::sqs:sendMessage.`**`waitForTaskToken`** in the required task.
+    If you are building the state machine using  [**Amazon States Language** (**ASL**)](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-amazon-states-language.html) then you can use the following resource `arn:aws:states:::sqs:sendMessage.waitForTaskToken` in the required task.
 
     If you are building the state machine using the Workflow Studio, you can configure it from the UI as below:
 
